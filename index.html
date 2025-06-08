@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowdiff - Your Living Knowledge Base</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #4f46e5, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand-gradient {
+            background: linear-gradient(120deg, #3b82f6, #8b5cf6, #ec4899);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-slate-50/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-bold text-2xl">
+                <span class="gradient-text">Knowdiff</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#features" class="text-slate-600 hover:text-indigo-600 transition">Features</a>
+                <a href="#philosophy" class="text-slate-600 hover:text-indigo-600 transition">Philosophy</a>
+                <a href="#pricing" class="text-slate-600 hover:text-indigo-600 transition">Pricing</a>
+                <a href="#github" class="text-slate-600 hover:text-indigo-600 transition">GitHub</a>
+            </div>
+            <a href="#waitlist"
+                class="hidden md:block bg-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-indigo-700 transition">Join
+                Waitlist</a>
+            <button id="mobile-menu-button" class="md:hidden text-slate-600 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 border-t border-slate-200">
+            <a href="#features" class="block py-2 text-slate-600 hover:text-indigo-600 transition">Features</a>
+            <a href="#philosophy" class="block py-2 text-slate-600 hover:text-indigo-600 transition">Philosophy</a>
+            <a href="#pricing" class="block py-2 text-slate-600 hover:text-indigo-600 transition">Pricing</a>
+            <a href="#github" class="block py-2 text-slate-600 hover:text-indigo-600 transition">GitHub</a>
+            <a href="#waitlist"
+                class="block mt-2 text-center bg-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-indigo-700 transition">Join
+                Waitlist</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6">
+
+        <!-- Hero Section -->
+        <section class="text-center py-20 md:py-32">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
+                From Static Notes to a <span class="gradient-text">Living Mind</span>.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-10">
+                Stop building a digital graveyard of facts. Knowdiff is a transparent PKM that organically grows with
+                you, actively helping you connect, challenge, and evolve your understanding. Your knowledge isn't
+                static—your notes shouldn't be either.
+            </p>
+            <div class="flex justify-center items-center space-x-4">
+                <a href="#waitlist"
+                    class="bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition text-lg">Join
+                    the Waitlist</a>
+                <a href="#github"
+                    class="bg-slate-200 text-slate-700 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-slate-300 transition text-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="inline-block -mt-1 mr-2">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                    View on GitHub
+                </a>
+            </div>
+        </section>
+
+        <!-- The Problem -->
+        <section class="py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Is Your Knowledge Base Working Against You?
+                </h2>
+                <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">In a world of constant information flow, a
+                    static library of notes isn't enough. Knowledge becomes outdated, contradictions hide in plain
+                    sight, and true insights are lost in the noise.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Information Overload</h3>
+                    <p class="text-slate-600">Struggling to connect new learnings with what you already know, leading to
+                        a fragmented understanding and duplicated effort.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Outdated Knowledge</h3>
+                    <p class="text-slate-600">Relying on information that is no longer accurate, risking flawed
+                        decisions and incorrect assumptions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Passive Collection</h3>
+                    <p class="text-slate-600">Notes become a digital graveyard instead of an active tool for learning,
+                        synthesis, and creativity.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Solution: Knowledge Diff Engine -->
+        <section class="py-20 bg-white rounded-2xl shadow-xl border border-slate-200 -rotate-1 transform">
+            <div class="rotate-1 transform">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">The Solution: The <span
+                            class="gradient-text">Knowledge Diff</span> Engine</h2>
+                    <p class="text-lg text-slate-600 mt-4 max-w-3xl mx-auto">Knowdiff introduces a revolutionary AI
+                        engine that compares any new piece of information to your entire knowledge base. It's like a
+                        'git diff' for your brain, showing you exactly how your understanding is evolving.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
+                    <!-- Diff Category: Outdated -->
+                    <div class="flex items-start space-x-4">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 brand-gradient rounded-lg flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-slate-900">Superseding</h4>
+                            <p class="text-slate-600 mt-1">This new information replaces an old concept entirely. We'll
+                                help you archive the old and adopt the new.</p>
+                        </div>
+                    </div>
+
+                    <!-- Diff Category: Augmenting -->
+                    <div class="flex items-start space-x-4">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 brand-gradient rounded-lg flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="12" y1="18" x2="12" y2="12"></line>
+                                <line x1="9" y1="15" x2="15" y2="15"></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-slate-900">Augmenting</h4>
+                            <p class="text-slate-600 mt-1">Adds critical detail or context to an existing note,
+                                deepening your understanding.</p>
+                        </div>
+                    </div>
+
+                    <!-- Diff Category: Supplementing -->
+                    <div class="flex items-start space-x-4">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 brand-gradient rounded-lg flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <path d="M3 15h6"></path>
+                                <path d="M6 12v6"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-slate-900">Supplementing</h4>
+                            <p class="text-slate-600 mt-1">Provides new, related information that connects to existing
+                                ideas, creating a richer knowledge graph.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Diff Category: Contradicting -->
+                    <div class="flex items-start space-x-4">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 brand-gradient rounded-lg flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-slate-900">Contradicting</h4>
+                            <p class="text-slate-600 mt-1">This new information directly conflicts with something you've
+                                already recorded. We'll flag it for your review and reconciliation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Diff Category: Superseding -->
+                    <div class="flex items-start space-x-4">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 brand-gradient rounded-lg flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 17.5V12l-2.5 2.5"></path>
+                                <path d="m14 10.5-2-2.5-2 2.5"></path>
+                                <path d="M2.004 12.23a10 10 0 1 0 16.5-7.556"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-slate-900">Outdated</h4>
+                            <p class="text-slate-600 mt-1">Highlights knowledge that is no longer relevant or has been
+                                surpassed by new developments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 mt-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">More Than a Diff Tool</h2>
+                <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">Knowdiff is a complete PKM solution designed
+                    for serious thinkers.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Rich Markdown Editor</h3>
+                    <p class="text-slate-600">Built on the fast and customizable Quill editor, offering a seamless
+                        writing experience.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">AI-Powered Categorization</h3>
+                    <p class="text-slate-600">Let AI suggest tags and links between notes, helping you build a connected
+                        knowledge graph effortlessly.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Stateful Change Tracking</h3>
+                    <p class="text-slate-600">Reliable version history for every piece of knowledge. Review and revert
+                        changes with confidence.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Active Learning Prompts</h3>
+                    <p class="text-slate-600">Turn insights into retained knowledge with built-in flashcard generation
+                        and review prompts.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">For Lifelong Learners</h3>
+                    <p class="text-slate-600">Perfect for academics, researchers, analysts, and anyone committed to
+                        deep, continuous learning.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200 ring-2 ring-indigo-500">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Radiant AI Mode <span
+                            class="text-sm font-medium bg-indigo-100 text-indigo-700 py-1 px-2 rounded-full ml-2">Premium</span>
+                    </h3>
+                    <p class="text-slate-600">Our future premium offering: an autonomous mode that proactively scans for
+                        updates to your knowledge base and provides daily briefings.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Source & Philosophy Section -->
+        <section id="philosophy" class="py-20">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">An Open System for an Open Mind.</h2>
+                    <p class="text-lg text-slate-600 mt-4">True knowledge requires honesty. That's why we're building
+                        Knowdiff transparently. Our open-source foundation means you're always in control. This isn't
+                        just about managing data; it's about cultivating a relationship with your own understanding,
+                        with no black boxes.</p>
+                    <div class="mt-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                        <a href="#"
+                            class="bg-slate-800 text-white font-semibold px-6 py-3 rounded-lg hover:bg-slate-900 transition flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="inline-block -mt-1 mr-2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            <span>Follow on GitHub</span>
+                        </a>
+                        <a href="#"
+                            class="bg-white text-slate-700 font-semibold px-6 py-3 rounded-lg hover:bg-slate-100 transition border border-slate-300 flex items-center justify-center">
+                            Read our Principles
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200 space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-indigo-500 mt-1 flex-shrink-0">
+                            <path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3">
+                            </path>
+                            <line x1="8" y1="12" x2="16" y2="12"></line>
+                        </svg>
+                        <div>
+                            <h4 class="font-semibold">Open Source Core</h4>
+                            <p class="text-slate-600 text-sm">Our core application will always be open source under the
+                                MIT License, free for personal and commercial use.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-indigo-500 mt-1 flex-shrink-0">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <div>
+                            <h4 class="font-semibold">You Own Your Data</h4>
+                            <p class="text-slate-600 text-sm">We believe in data sovereignty. We will offer local-first
+                                storage options and end-to-end encryption for cloud sync.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-indigo-500 mt-1 flex-shrink-0">
+                            <path d="M20 12V8l-6-4H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"></path>
+                            <path d="m18.5 15.5.4 2.1.2 1.4-1.6-.8-1.6-.8.9-1.9.9-1.9Z"></path>
+                        </svg>
+                        <div>
+                            <h4 class="font-semibold">Human in the Loop</h4>
+                            <p class="text-slate-600 text-sm">Our AI is a powerful assistant, not an autocrat. You
+                                always have the final say on any changes to your knowledge base.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Pricing for Every Learner</h2>
+                <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">Start for free and upgrade as your knowledge
+                    base grows in power and complexity.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+                <!-- Free Tier -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200 flex flex-col">
+                    <h3 class="text-2xl font-semibold">Free</h3>
+                    <p class="text-slate-500 mt-2">For getting started with dynamic notes.</p>
+                    <p class="text-4xl font-bold my-6">$0<span class="text-lg font-medium text-slate-500">/
+                            forever</span></p>
+                    <ul class="space-y-3 text-slate-600 flex-grow">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>Rich Markdown Notes</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>Manual Categorization</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>Limited "Knowledge Diff" Analyses</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>Basic AI Content Generation</li>
+                    </ul>
+                    <a href="#waitlist"
+                        class="mt-8 w-full text-center bg-slate-100 text-slate-700 font-semibold py-3 rounded-lg hover:bg-slate-200 transition">Get
+                        Started</a>
+                </div>
+
+                <!-- Pro Tier -->
+                <div class="bg-white p-8 rounded-xl shadow-2xl border-2 border-indigo-500 flex flex-col relative">
+                    <p
+                        class="absolute top-0 -translate-y-1/2 bg-indigo-500 text-white text-sm font-semibold px-4 py-1 rounded-full">
+                        Most Popular</p>
+                    <h3 class="text-2xl font-semibold">Pro</h3>
+                    <p class="text-slate-500 mt-2">For power users and professionals.</p>
+                    <p class="text-4xl font-bold my-6">$10<span class="text-lg font-medium text-slate-500">/
+                            month</span></p>
+                    <ul class="space-y-3 text-slate-600 flex-grow">
+                        <li class="flex items-center font-semibold"><svg class="w-5 h-5 text-green-500 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>Everything in Free, plus:</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>Unlimited "Knowledge Diff" Analyses</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>Advanced AI Categorization</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>Flashcards & Active Learning Tools</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>Full Version History</li>
+                    </ul>
+                    <a href="#waitlist"
+                        class="mt-8 w-full text-center bg-indigo-600 text-white font-semibold py-3 rounded-lg hover:bg-indigo-700 transition">Join
+                        Waitlist for Pro</a>
+                </div>
+
+                <!-- Radiant AI Tier -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200 flex flex-col">
+                    <h3 class="text-2xl font-semibold">Radiant AI</h3>
+                    <p class="text-slate-500 mt-2">For an autonomous knowledge partner.</p>
+                    <p class="text-4xl font-bold my-6">Coming Soon</p>
+                    <ul class="space-y-3 text-slate-600 flex-grow">
+                        <li class="flex items-center font-semibold"><svg class="w-5 h-5 text-green-500 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>Everything in Pro, plus:</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>Automated Daily Knowledge Updates</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>Contextual Daily Briefings</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>Priority Support</li>
+                    </ul>
+                    <a href="#waitlist"
+                        class="mt-8 w-full text-center bg-slate-100 text-slate-700 font-semibold py-3 rounded-lg hover:bg-slate-200 transition">Get
+                        Notified</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Waitlist / CTA Section -->
+        <section id="waitlist" class="py-20 text-center brand-gradient rounded-2xl my-20">
+            <div class="px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Help Shape the Future of Learning</h2>
+                <p class="text-lg text-indigo-100 mt-4 max-w-2xl mx-auto">Join our waitlist to get early access, provide
+                    feedback, and be the first to experience a new way of managing knowledge. Help us build the tool
+                    you've always wanted.</p>
+                <div class="mt-8 max-w-md mx-auto">
+                    <form class="flex flex-col sm:flex-row gap-3">
+                        <input type="email" placeholder="you@example.com" required
+                            class="w-full px-4 py-3 rounded-lg text-slate-800 focus:outline-none focus:ring-4 focus:ring-white/50 transition" />
+                        <button type="submit"
+                            class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-indigo-50 transition">Request
+                            Access</button>
+                    </form>
+                    <p class="text-xs text-indigo-200 mt-3">No spam, just updates on our progress and your early access.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Placeholder Section -->
+        <section id="github" class="text-center py-10">
+            <h2 class="text-2xl font-bold text-slate-900">We're Building in the Open</h2>
+            <p class="text-slate-600 mt-2">Follow our journey, contribute to the code, and help us shape Knowdiff.</p>
+            <a href="https://github.com/placeholder/knowdiff" target="_blank" rel="noopener noreferrer"
+                class="mt-4 inline-block bg-slate-800 text-white font-semibold px-6 py-3 rounded-lg hover:bg-slate-900 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="inline-block -mt-1 mr-2">
+                    <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                </svg>
+                github.com/placeholder/knowdiff
+            </a>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-100 border-t border-slate-200 mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-500">
+            <p>&copy; 2025 Knowdiff. All rights reserved. Core software licensed under MIT.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#philosophy" class="hover:text-indigo-600 transition">Our Principles</a>
+                <a href="#github" class="hover:text-indigo-600 transition">GitHub</a>
+                <a href="#" class="hover:text-indigo-600 transition">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
